@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB4038281E24C68600E14187 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4038271E24C68600E14187 /* AppDelegate.swift */; };
+		EB40382A1E24C68600E14187 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4038291E24C68600E14187 /* ViewController.swift */; };
+		EB40382D1E24C68600E14187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB40382B1E24C68600E14187 /* Main.storyboard */; };
+		EB40382F1E24C68600E14187 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB40382E1E24C68600E14187 /* Assets.xcassets */; };
+		EB4038321E24C68600E14187 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4038301E24C68600E14187 /* LaunchScreen.storyboard */; };
+		EB4038371E24C68700E14187 /* hacker WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EB4038361E24C68700E14187 /* hacker WatchKit App.app */; };
+		EB40383D1E24C68700E14187 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB40383B1E24C68700E14187 /* Interface.storyboard */; };
+		EB40383F1E24C68700E14187 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB40383E1E24C68700E14187 /* Assets.xcassets */; };
+		EB4038461E24C68700E14187 /* hacker WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EB4038451E24C68700E14187 /* hacker WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EB40384D1E24C68700E14187 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB40384C1E24C68700E14187 /* InterfaceController.swift */; };
+		EB40384F1E24C68700E14187 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB40384E1E24C68700E14187 /* ExtensionDelegate.swift */; };
+		EB4038511E24C68700E14187 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4038501E24C68700E14187 /* NotificationController.swift */; };
+		EB4038531E24C68700E14187 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB4038521E24C68700E14187 /* Assets.xcassets */; };
+		EB4038681E24C87800E14187 /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4038671E24C87800E14187 /* Fetcher.swift */; };
+		EB40386A1E24CCF800E14187 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4038691E24CCF800E14187 /* Cache.swift */; };
+		EB5F32481E2C76F800A0B95A /* WebviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F32471E2C76F800A0B95A /* WebviewController.swift */; };
+		EB5F324A1E2C791700A0B95A /* SafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F32491E2C791700A0B95A /* SafariViewController.swift */; };
+		EB5F324C1E2C9B4900A0B95A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F324B1E2C9B4900A0B95A /* DetailViewController.swift */; };
+		EB600FA71E275AFD00236000 /* HTMLScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB600FA61E275AFD00236000 /* HTMLScanner.swift */; };
+		EB600FA91E275B0A00236000 /* HTMLString.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB600FA81E275B0A00236000 /* HTMLString.swift */; };
+		EB600FAB1E27636B00236000 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB600FAA1E27636B00236000 /* Post.swift */; };
+		EB600FAE1E27892700236000 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB600FAD1E27892700236000 /* Comment.swift */; };
+		EB600FCE1E2873B300236000 /* YYTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB600FCD1E2873B300236000 /* YYTableViewController.swift */; };
+		EB600FD01E287A7200236000 /* UIColor_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB600FCF1E287A7200236000 /* UIColor_Extensions.swift */; };
+		EB600FD51E28B44D00236000 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB600FD41E28B44D00236000 /* Helper.swift */; };
+		EB600FD71E28B45C00236000 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB600FD61E28B45C00236000 /* Preferences.swift */; };
+		EB600FDA1E28B5EF00236000 /* OpenSafariActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB600FD91E28B5EF00236000 /* OpenSafariActivity.swift */; };
+		EB600FDE1E28BBF600236000 /* CommentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB600FDD1E28BBF600236000 /* CommentsCell.swift */; };
+		EB600FE01E28BC0800236000 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB600FDF1E28BC0800236000 /* NewsCell.swift */; };
+		EB600FE21E28C6C600236000 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB600FE11E28C6C600236000 /* BorderedButton.swift */; };
+		EB600FE41E28D06A00236000 /* NSDate+TimeAgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB600FE31E28D06A00236000 /* NSDate+TimeAgo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB4038381E24C68700E14187 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB40381C1E24C68600E14187 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB4038351E24C68700E14187;
+			remoteInfo = "hacker WatchKit App";
+		};
+		EB4038471E24C68700E14187 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB40381C1E24C68600E14187 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB4038441E24C68700E14187;
+			remoteInfo = "hacker WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EB40385A1E24C68700E14187 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EB4038461E24C68700E14187 /* hacker WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB40385E1E24C68700E14187 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EB4038371E24C68700E14187 /* hacker WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EB4038241E24C68600E14187 /* hacker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hacker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB4038271E24C68600E14187 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB4038291E24C68600E14187 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EB40382C1E24C68600E14187 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB40382E1E24C68600E14187 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB4038311E24C68600E14187 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB4038331E24C68600E14187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB4038361E24C68700E14187 /* hacker WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hacker WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB40383C1E24C68700E14187 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		EB40383E1E24C68700E14187 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB4038401E24C68700E14187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB4038451E24C68700E14187 /* hacker WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "hacker WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB40384B1E24C68700E14187 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		EB40384C1E24C68700E14187 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		EB40384E1E24C68700E14187 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		EB4038501E24C68700E14187 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		EB4038521E24C68700E14187 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB4038541E24C68700E14187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB4038671E24C87800E14187 /* Fetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fetcher.swift; sourceTree = "<group>"; };
+		EB4038691E24CCF800E14187 /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		EB5F32471E2C76F800A0B95A /* WebviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebviewController.swift; sourceTree = "<group>"; };
+		EB5F32491E2C791700A0B95A /* SafariViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariViewController.swift; sourceTree = "<group>"; };
+		EB5F324B1E2C9B4900A0B95A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		EB600FA61E275AFD00236000 /* HTMLScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLScanner.swift; sourceTree = "<group>"; };
+		EB600FA81E275B0A00236000 /* HTMLString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLString.swift; sourceTree = "<group>"; };
+		EB600FAA1E27636B00236000 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		EB600FAD1E27892700236000 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		EB600FCD1E2873B300236000 /* YYTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYTableViewController.swift; sourceTree = "<group>"; };
+		EB600FCF1E287A7200236000 /* UIColor_Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor_Extensions.swift; sourceTree = "<group>"; };
+		EB600FD41E28B44D00236000 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		EB600FD61E28B45C00236000 /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		EB600FD91E28B5EF00236000 /* OpenSafariActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenSafariActivity.swift; sourceTree = "<group>"; };
+		EB600FDD1E28BBF600236000 /* CommentsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsCell.swift; sourceTree = "<group>"; };
+		EB600FDF1E28BC0800236000 /* NewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		EB600FE11E28C6C600236000 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		EB600FE31E28D06A00236000 /* NSDate+TimeAgo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+TimeAgo.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB4038211E24C68600E14187 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB4038421E24C68700E14187 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB40381B1E24C68600E14187 = {
+			isa = PBXGroup;
+			children = (
+				EB4038631E24C86500E14187 /* HTTPS */,
+				EB4038261E24C68600E14187 /* hacker */,
+				EB40383A1E24C68700E14187 /* hacker WatchKit App */,
+				EB4038491E24C68700E14187 /* hacker WatchKit Extension */,
+				EB4038251E24C68600E14187 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB4038251E24C68600E14187 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB4038241E24C68600E14187 /* hacker.app */,
+				EB4038361E24C68700E14187 /* hacker WatchKit App.app */,
+				EB4038451E24C68700E14187 /* hacker WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB4038261E24C68600E14187 /* hacker */ = {
+			isa = PBXGroup;
+			children = (
+				EB600FD81E28B5DD00236000 /* Activities */,
+				EB600FD31E28B3C600236000 /* Cells */,
+				EB600FD21E28B3BC00236000 /* ViewController */,
+				EB600FD11E28B3AD00236000 /* Utils */,
+				EB4038271E24C68600E14187 /* AppDelegate.swift */,
+				EB40382B1E24C68600E14187 /* Main.storyboard */,
+				EB40382E1E24C68600E14187 /* Assets.xcassets */,
+				EB4038301E24C68600E14187 /* LaunchScreen.storyboard */,
+				EB4038331E24C68600E14187 /* Info.plist */,
+			);
+			path = hacker;
+			sourceTree = "<group>";
+		};
+		EB40383A1E24C68700E14187 /* hacker WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				EB40383B1E24C68700E14187 /* Interface.storyboard */,
+				EB40383E1E24C68700E14187 /* Assets.xcassets */,
+				EB4038401E24C68700E14187 /* Info.plist */,
+			);
+			path = "hacker WatchKit App";
+			sourceTree = "<group>";
+		};
+		EB4038491E24C68700E14187 /* hacker WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EB40384C1E24C68700E14187 /* InterfaceController.swift */,
+				EB40384E1E24C68700E14187 /* ExtensionDelegate.swift */,
+				EB4038501E24C68700E14187 /* NotificationController.swift */,
+				EB4038521E24C68700E14187 /* Assets.xcassets */,
+				EB4038541E24C68700E14187 /* Info.plist */,
+				EB40384A1E24C68700E14187 /* Supporting Files */,
+			);
+			path = "hacker WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		EB40384A1E24C68700E14187 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB40384B1E24C68700E14187 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB4038631E24C86500E14187 /* HTTPS */ = {
+			isa = PBXGroup;
+			children = (
+				EB4038641E24C86500E14187 /* Extension */,
+				EB4038651E24C86500E14187 /* HTTP */,
+				EB4038661E24C86500E14187 /* Models */,
+			);
+			path = HTTPS;
+			sourceTree = "<group>";
+		};
+		EB4038641E24C86500E14187 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EB600FA61E275AFD00236000 /* HTMLScanner.swift */,
+				EB600FA81E275B0A00236000 /* HTMLString.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EB4038651E24C86500E14187 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				EB4038671E24C87800E14187 /* Fetcher.swift */,
+				EB4038691E24CCF800E14187 /* Cache.swift */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		EB4038661E24C86500E14187 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EB600FAA1E27636B00236000 /* Post.swift */,
+				EB600FAD1E27892700236000 /* Comment.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EB600FD11E28B3AD00236000 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EB600FE31E28D06A00236000 /* NSDate+TimeAgo.swift */,
+				EB600FCF1E287A7200236000 /* UIColor_Extensions.swift */,
+				EB600FD41E28B44D00236000 /* Helper.swift */,
+				EB600FD61E28B45C00236000 /* Preferences.swift */,
+				EB600FE11E28C6C600236000 /* BorderedButton.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		EB600FD21E28B3BC00236000 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EB4038291E24C68600E14187 /* ViewController.swift */,
+				EB600FCD1E2873B300236000 /* YYTableViewController.swift */,
+				EB5F32471E2C76F800A0B95A /* WebviewController.swift */,
+				EB5F32491E2C791700A0B95A /* SafariViewController.swift */,
+				EB5F324B1E2C9B4900A0B95A /* DetailViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		EB600FD31E28B3C600236000 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EB600FDD1E28BBF600236000 /* CommentsCell.swift */,
+				EB600FDF1E28BC0800236000 /* NewsCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		EB600FD81E28B5DD00236000 /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				EB600FD91E28B5EF00236000 /* OpenSafariActivity.swift */,
+			);
+			name = Activities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB4038231E24C68600E14187 /* hacker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB40385F1E24C68700E14187 /* Build configuration list for PBXNativeTarget "hacker" */;
+			buildPhases = (
+				EB4038201E24C68600E14187 /* Sources */,
+				EB4038211E24C68600E14187 /* Frameworks */,
+				EB4038221E24C68600E14187 /* Resources */,
+				EB40385E1E24C68700E14187 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB4038391E24C68700E14187 /* PBXTargetDependency */,
+			);
+			name = hacker;
+			productName = hacker;
+			productReference = EB4038241E24C68600E14187 /* hacker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB4038351E24C68700E14187 /* hacker WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB40385B1E24C68700E14187 /* Build configuration list for PBXNativeTarget "hacker WatchKit App" */;
+			buildPhases = (
+				EB4038341E24C68700E14187 /* Resources */,
+				EB40385A1E24C68700E14187 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB4038481E24C68700E14187 /* PBXTargetDependency */,
+			);
+			name = "hacker WatchKit App";
+			productName = "hacker WatchKit App";
+			productReference = EB4038361E24C68700E14187 /* hacker WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		EB4038441E24C68700E14187 /* hacker WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB4038571E24C68700E14187 /* Build configuration list for PBXNativeTarget "hacker WatchKit Extension" */;
+			buildPhases = (
+				EB4038411E24C68700E14187 /* Sources */,
+				EB4038421E24C68700E14187 /* Frameworks */,
+				EB4038431E24C68700E14187 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "hacker WatchKit Extension";
+			productName = "hacker WatchKit Extension";
+			productReference = EB4038451E24C68700E14187 /* hacker WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB40381C1E24C68600E14187 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = joker;
+				TargetAttributes = {
+					EB4038231E24C68600E14187 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ZWZANXUM79;
+						ProvisioningStyle = Automatic;
+					};
+					EB4038351E24C68700E14187 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ZWZANXUM79;
+						ProvisioningStyle = Automatic;
+					};
+					EB4038441E24C68700E14187 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ZWZANXUM79;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EB40381F1E24C68600E14187 /* Build configuration list for PBXProject "hacker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB40381B1E24C68600E14187;
+			productRefGroup = EB4038251E24C68600E14187 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB4038231E24C68600E14187 /* hacker */,
+				EB4038351E24C68700E14187 /* hacker WatchKit App */,
+				EB4038441E24C68700E14187 /* hacker WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB4038221E24C68600E14187 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB4038321E24C68600E14187 /* LaunchScreen.storyboard in Resources */,
+				EB40382F1E24C68600E14187 /* Assets.xcassets in Resources */,
+				EB40382D1E24C68600E14187 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB4038341E24C68700E14187 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB40383F1E24C68700E14187 /* Assets.xcassets in Resources */,
+				EB40383D1E24C68700E14187 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB4038431E24C68700E14187 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB4038531E24C68700E14187 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB4038201E24C68600E14187 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB600FD51E28B44D00236000 /* Helper.swift in Sources */,
+				EB600FDE1E28BBF600236000 /* CommentsCell.swift in Sources */,
+				EB600FA71E275AFD00236000 /* HTMLScanner.swift in Sources */,
+				EB600FD71E28B45C00236000 /* Preferences.swift in Sources */,
+				EB600FE41E28D06A00236000 /* NSDate+TimeAgo.swift in Sources */,
+				EB40382A1E24C68600E14187 /* ViewController.swift in Sources */,
+				EB600FE01E28BC0800236000 /* NewsCell.swift in Sources */,
+				EB5F324C1E2C9B4900A0B95A /* DetailViewController.swift in Sources */,
+				EB5F32481E2C76F800A0B95A /* WebviewController.swift in Sources */,
+				EB4038281E24C68600E14187 /* AppDelegate.swift in Sources */,
+				EB600FAE1E27892700236000 /* Comment.swift in Sources */,
+				EB40386A1E24CCF800E14187 /* Cache.swift in Sources */,
+				EB600FD01E287A7200236000 /* UIColor_Extensions.swift in Sources */,
+				EB600FE21E28C6C600236000 /* BorderedButton.swift in Sources */,
+				EB4038681E24C87800E14187 /* Fetcher.swift in Sources */,
+				EB5F324A1E2C791700A0B95A /* SafariViewController.swift in Sources */,
+				EB600FCE1E2873B300236000 /* YYTableViewController.swift in Sources */,
+				EB600FAB1E27636B00236000 /* Post.swift in Sources */,
+				EB600FA91E275B0A00236000 /* HTMLString.swift in Sources */,
+				EB600FDA1E28B5EF00236000 /* OpenSafariActivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB4038411E24C68700E14187 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB4038511E24C68700E14187 /* NotificationController.swift in Sources */,
+				EB40384F1E24C68700E14187 /* ExtensionDelegate.swift in Sources */,
+				EB40384D1E24C68700E14187 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB4038391E24C68700E14187 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB4038351E24C68700E14187 /* hacker WatchKit App */;
+			targetProxy = EB4038381E24C68700E14187 /* PBXContainerItemProxy */;
+		};
+		EB4038481E24C68700E14187 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB4038441E24C68700E14187 /* hacker WatchKit Extension */;
+			targetProxy = EB4038471E24C68700E14187 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB40382B1E24C68600E14187 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB40382C1E24C68600E14187 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB4038301E24C68600E14187 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB4038311E24C68600E14187 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EB40383B1E24C68700E14187 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB40383C1E24C68700E14187 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB4038551E24C68700E14187 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB4038561E24C68700E14187 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB4038581E24C68700E14187 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = ZWZANXUM79;
+				INFOPLIST_FILE = "hacker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iOS-swift.20160422.learn.hacker.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		EB4038591E24C68700E14187 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = ZWZANXUM79;
+				INFOPLIST_FILE = "hacker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iOS-swift.20160422.learn.hacker.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		EB40385C1E24C68700E14187 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZWZANXUM79;
+				IBSC_MODULE = hacker_WatchKit_Extension;
+				INFOPLIST_FILE = "hacker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iOS-swift.20160422.learn.hacker.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		EB40385D1E24C68700E14187 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZWZANXUM79;
+				IBSC_MODULE = hacker_WatchKit_Extension;
+				INFOPLIST_FILE = "hacker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iOS-swift.20160422.learn.hacker.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		EB4038601E24C68700E14187 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZWZANXUM79;
+				INFOPLIST_FILE = hacker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iOS-swift.20160422.learn.hacker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EB4038611E24C68700E14187 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZWZANXUM79;
+				INFOPLIST_FILE = hacker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iOS-swift.20160422.learn.hacker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB40381F1E24C68600E14187 /* Build configuration list for PBXProject "hacker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB4038551E24C68700E14187 /* Debug */,
+				EB4038561E24C68700E14187 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EB4038571E24C68700E14187 /* Build configuration list for PBXNativeTarget "hacker WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB4038581E24C68700E14187 /* Debug */,
+				EB4038591E24C68700E14187 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EB40385B1E24C68700E14187 /* Build configuration list for PBXNativeTarget "hacker WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB40385C1E24C68700E14187 /* Debug */,
+				EB40385D1E24C68700E14187 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EB40385F1E24C68700E14187 /* Build configuration list for PBXNativeTarget "hacker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB4038601E24C68700E14187 /* Debug */,
+				EB4038611E24C68700E14187 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB40381C1E24C68600E14187 /* Project object */;
+}
